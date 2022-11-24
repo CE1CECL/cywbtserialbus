@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up WDK version 2004 for bcmgenet backwards compatibility
+    - name: Set up WDK version 2004 for cywbtserialbus backwards compatibility
       run: |
         $wdkSetupPath = "$Env:TEMP\wdksetup.exe"
         (New-Object Net.WebClient).DownloadFile('https://go.microsoft.com/fwlink/?linkid=2128854', $wdkSetupPath)

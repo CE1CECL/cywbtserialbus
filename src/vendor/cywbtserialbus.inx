@@ -1,4 +1,4 @@
-﻿;/*++
+;/*++
 ;
 ;Copyright (c) 2020 Mario Bălănică. All Rights Reserved.
 ;Copyright (c) 2010 Microsoft Corporation. All rights Reserved.
@@ -36,7 +36,6 @@ BCM4345C0.hcd      = 1,\fw,
 BCM4345C5.hcd      = 1,\fw,
 SYN43430A1.hcd     = 1,\fw,
 SYN43430B0.hcd     = 1,\fw,
-
 
 [ControlFlags]
 ExcludeFromSelect = *
@@ -87,7 +86,7 @@ ServiceBinary  = %12%\cywbtserialbus.sys
 AddReg         = cywbtserialbus_Service_Inst.AddReg
 
 [cywbtserialbus_Service_Inst.AddReg]
-HKR, Parameters, BaudRate       ,0x10001, 0x70800 ; 460800 baud for now
+HKR, Parameters, BaudRate       ,0x10001, 0x2DC6C0 ; 3000000 baud
 HKR, Parameters, SkipFwDownload	,0x10001, 0x0
 
 [Strings]

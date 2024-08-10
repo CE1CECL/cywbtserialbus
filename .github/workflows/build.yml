@@ -2,8 +2,6 @@ name: build
 
 on:
   workflow_dispatch: 
-  schedule:
-    - cron: '* * * * *'
     
 env:
   SOLUTION_FILE_PATH: .\cywbtserialbus.sln 

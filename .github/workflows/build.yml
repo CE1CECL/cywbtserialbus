@@ -31,5 +31,5 @@ jobs:
     - name: Upload cywbtserialbus
       uses: actions/upload-artifact@v4.6.0
       with:
-         name: cywbtserialbus
+         name: cywbtserialbus_${{matrix.PLATFORM}}_${{matrix.BUILD_CONFIGURATION}}
          path: D:\a\cywbtserialbus
